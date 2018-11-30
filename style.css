@@ -1,1 +1,48 @@
-/* Acá va tu código */
+#botonComenzar1 {
+  color: black;
+  border-radius: 10px;
+  background-color: #a6cb12;
+  padding: 20px 40px;
+  font-family: Helvetica;
+  font-size: 20pt;
+}
+
+#botonComenzar2 {
+  color: black;
+  border-radius: 10px;
+  background-color: #a6cb12 ;
+  padding: 20px 40px;
+  font-family: Helvetica;
+  font-size: 20pt;
+  }
+
+  #buttonBack {
+    color: black;
+    border-radius: 10px;
+    background-color: #a6cb12 ;
+    padding: 20px 40px;
+    font-family: Helvetica;
+    font-size: 20pt;
+    }
+    #botonOk {
+      color: black;
+      border-radius: 10px;
+      background-color: #a6cb12 ;
+      padding: 20px 40px;
+      font-family: Helvetica;
+      font-size: 20pt;
+      }
+
+  h1 {
+        color: black;
+        background-color: #e00543;
+        border: 3px solid black;
+    }
+
+body{
+    background-image: #fdf1db;
+  }
+
+  P {
+    text-align: center;
+    }
