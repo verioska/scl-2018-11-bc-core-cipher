@@ -18,7 +18,7 @@ botonComenzar1.addEventListener("click",function(){
 
 
   <center>
-  <button id="botonOk" onclick="next()">siguiente</button>
+  <button id="botonOk" onclick="next()">Siguiente</button>
 
 
 
@@ -59,7 +59,7 @@ botonComenzar2.addEventListener("click",function(){
 
 
   <center>
-  <button id="botonOk" onclick="next1()">siguiente1</button>
+  <button id="botonOk" onclick="next1()">Siguiente</button>
 
   <button id="buttonBack" onclick=location=URL> Volver al inicio </button>
   <center>`;

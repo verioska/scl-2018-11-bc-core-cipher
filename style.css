@@ -1,48 +1,53 @@
+
 #botonComenzar1 {
   color: black;
   border-radius: 10px;
-  background-color: #a6cb12;
+  background-color: #f8b500;
   padding: 20px 40px;
-  font-family: Helvetica;
+  font-family: 'Shrikhand', cursive;
   font-size: 20pt;
 }
 
 #botonComenzar2 {
   color: black;
   border-radius: 10px;
-  background-color: #a6cb12 ;
+  background-color: #f8b500 ;
   padding: 20px 40px;
-  font-family: Helvetica;
+  font-family: 'Shrikhand', cursive;
   font-size: 20pt;
   }
 
   #buttonBack {
     color: black;
     border-radius: 10px;
-    background-color: #a6cb12 ;
+    background-color: #f8b500 ;
     padding: 20px 40px;
-    font-family: Helvetica;
+    font-family: 'Shrikhand', cursive;
     font-size: 20pt;
     }
     #botonOk {
       color: black;
       border-radius: 10px;
-      background-color: #a6cb12 ;
+      background-color: #f8b500 ;
       padding: 20px 40px;
-      font-family: Helvetica;
+      font-family: 'Shrikhand', cursive;
       font-size: 20pt;
       }
 
-  h1 {
-        color: black;
-        background-color: #e00543;
-        border: 3px solid black;
-    }
+h1{
 
+  ext-align: left;
+  font-family: Comic Sans MS;
+  font-weight:bold;
+  font-size: 60px;
+  color: #f8b500;
+  text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68; 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
+}
 body{
-    background-image: #fdf1db;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/52/01/2257931d1f61b37.jpg") ;
   }
 
   P {
-    text-align: center;
-    }
+
+     font-size: 25px;
+     font-family: 'Kaushan Script', cursive;
