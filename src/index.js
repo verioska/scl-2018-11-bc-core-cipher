@@ -10,10 +10,10 @@ botonComenzar1.addEventListener("click",function(){
 
   main.innerHTML=`<p align='center'> Ingresa tu mensaje que deseas cifrar<p>
   <p align='center'> NOTA: No debes ingresar letras minuscula, ni caracteres, ni la letra ñ<p>
-  <p align='center'><textarea id="mensaje" rows="5" cols="70"></textarea><p>
-  <p align='center'> Ingrese el numero de recorrido<p>
-  <p align='center'> NOTA: No debes ingresar numeros negativos<p>
-  <p align='center'><textarea id="offset" rows="1" cols="3"></textarea><p>
+  <p align='center'><textarea  id="mensaje" rows="5" cols="70"></textarea><p>
+  <p align='center'> Ingrese el número de recorrido<p>
+  <p align='center'> NOTA: No debes ingresar números negativos<p>
+  <p align='center'><textarea  id="offset" rows="1" cols="3"></textarea><p>
 
 
 
@@ -34,7 +34,7 @@ function next(){
   //console.log(offset1)
 
 
-  main.innerHTML=`<p align='center'> Tu mensaje codificado es: <br><br><br>${window.cipher.encode(strng,offset1)} <br><br><br><p>
+  main.innerHTML=`<p align='center'> Tu mensaje cifrado es: <br><br><br>${window.cipher.encode(strng,offset1)} <br><br><br><p>
   <center>
 
 
@@ -49,11 +49,11 @@ function next(){
 
 botonComenzar2.addEventListener("click",function(){
 
-  main.innerHTML=`<p align='center'>Ingresa tu mensaje que deseas decodificar<p>
+  main.innerHTML=`<p align='center'>Ingresa tu mensaje que deseas descifrar<p>
   <p align='center'> NOTA: No debes ingresar letras minuscula, ni caracteres, ni la letra ñ<p>
   <p align='center'><textarea id="mensajedecodificado" rows="5" cols="70"></textarea><p>
-  <p align='center'> Ingrese el numero de recorrido<p>
-  <p align='center'> NOTA: No debes ingresar numeros negativos<p>
+  <p align='center'> Ingrese el número de recorrido<p>
+  <p align='center'> NOTA: No debes ingresar número negativos<p>
   <p align='center'><textarea id="offset1" rows="1" cols="3"></textarea><p>
 
 
@@ -73,7 +73,7 @@ function next1(){
   let offset1 = document.getElementById("offset1").value;
   console.log(window.cipher.decode(strng1,offset1));
 
-  main.innerHTML=`<p align='center'> Tu mensaje decodificado es:<br><br><br>${window.cipher.decode(strng1,offset1)}<p>
+  main.innerHTML=`<p align='center'> Tu mensaje descifrado es:<br><br><br>${window.cipher.decode(strng1,offset1)}<p>
 
   <center>
   <button id="buttonBack" onclick=location=URL> Volver al inicio </button>
