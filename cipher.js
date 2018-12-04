@@ -19,7 +19,7 @@ window.cipher = {
                 let resultado=(ascii-65+offset1) %26+65;
                 let resultadofinal=String.fromCharCode(resultado);
                 total.push(resultadofinal);
-               let totalJoined=total.join("");
+               //let totalJoined=total.join("");
 
           } else {
                 alert("caracter no valido")
@@ -62,7 +62,7 @@ window.cipher = {
                     let resultado=(ascii-90-offset1) %26+90;
                     let resultadofinal=String.fromCharCode(resultado);
                     total.push(resultadofinal);
-                    let totalJoined=total.join("");
+                  //  let totalJoined=total.join("");
 
               } else {
                     alert("caracter no valido")

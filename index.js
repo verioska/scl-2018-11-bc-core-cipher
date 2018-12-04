@@ -4,6 +4,7 @@
 const botonComenzar1 = document.getElementById("botonComenzar1");
 const botonComenzar2 = document.getElementById("botonComenzar2");
 const main = document.getElementById("main");
+//const botonOk=document.getElementById("botonOk");
 
 botonComenzar1.addEventListener("click",function(){
 
@@ -16,17 +17,14 @@ botonComenzar1.addEventListener("click",function(){
   <p align='center'><textarea  id="offset" rows="1" cols="3"></textarea><p>
 
 
-
   <center>
   <button id="botonOk" onclick="next()">Siguiente</button>
-
-
-
   <button id="buttonBack" onclick=location=URL> Volver al inicio </button>
   <center>`;
 
-
 });
+
+//botonOk.addEventListener("click",function(){
 function next(){
   let strng = document.getElementById("mensaje").value;
 //  console.log(strng);
@@ -40,11 +38,7 @@ function next(){
 
   <button id="buttonBack" onclick=location=URL> Volver al inicio </button>
   <center>`;
-
-
-
-
-};
+}
 
 
 botonComenzar2.addEventListener("click",function(){
@@ -67,11 +61,12 @@ botonComenzar2.addEventListener("click",function(){
 
 
 });
+// document.getElementById("idboton").addEventListener("evento", () => {})
 function next1(){
   let strng1 = document.getElementById("mensajedecodificado").value;
   //console.log(strng1);
   let offset1 = document.getElementById("offset1").value;
-  console.log(window.cipher.decode(strng1,offset1));
+  //console.log(window.cipher.decode(strng1,offset1));
 
   main.innerHTML=`<p align='center'> Tu mensaje descifrado es:<br><br><br>${window.cipher.decode(strng1,offset1)}<p>
 
