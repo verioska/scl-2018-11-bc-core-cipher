@@ -24,7 +24,7 @@ window.cipher = {
           } else {
                 alert("caracter no valido")
                 return "ESO NO SE HACE";
-          }
+         }
 
                                    } //llave for
         let totalJoined=total.join("");

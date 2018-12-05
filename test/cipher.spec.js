@@ -14,8 +14,9 @@ describe('cipher', () => {
        assert.equal(cipher.encode("ABCDEFGHIJKLMNOPQRSTUVWXYZ",33),"HIJKLMNOPQRSTUVWXYZABCDEFG");
      });
 
-
-});
+     it('deberia retornar "B" para "A" con offsest 1', () => {
+      assert.equal(cipher.encode("A",1),"B")
+    });
 
   describe('cipher.decode', () => {
 
@@ -27,4 +28,5 @@ describe('cipher', () => {
       assert.equal(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG" ,33),"ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     });
   });
+});
 });
