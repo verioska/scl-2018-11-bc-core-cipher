@@ -1,77 +1,90 @@
 //window.onload = ()=> {
 
-
 const botonComenzar1 = document.getElementById("botonComenzar1");
 const botonComenzar2 = document.getElementById("botonComenzar2");
 const main = document.getElementById("main");
-//const botonOk=document.getElementById("botonOk");
+const siguiente=document.getElementById("oculto1");
+const ocultmain=document.getElementById("main");
+const resul1=document.getElementById("resul1");
+const siguientedecode=document.getElementById("oculto2");
+const botonregresa=document.getElementById("buttoBack");
+const botonregresa1=document.getElementById("buttoBack2");
+const x=document.getElementById("resultado2");
+//const xx=document.getElementById("resultado3");
+
+
 
 botonComenzar1.addEventListener("click",function(){
-
-
-  main.innerHTML=`<p align='center'> Ingresa tu mensaje que deseas cifrar<p>
-  <p align='center'> NOTA: No debes ingresar letras minuscula, ni caracteres, ni la letra ñ<p>
-  <p align='center'><textarea  id="mensaje" rows="5" cols="70"></textarea><p>
-  <p align='center'> Ingrese el número de recorrido<p>
-  <p align='center'> NOTA: No debes ingresar números negativos<p>
-  <p align='center'><textarea  id="offset" rows="1" cols="3"></textarea><p>
-
-
-  <center>
-  <button id="botonOk" onclick="next()">Siguiente</button>
-  <button id="buttonBack" onclick=location=URL> Volver al inicio </button>
-  <center>`;
-
+  siguiente.style.display = "block"; 
+  ocultmain.style.display="none";
+  
+  
 });
 
-//botonOk.addEventListener("click",function(){
-function next(){
+
+document.getElementById("botonOk").addEventListener("click",function(){
+
   let strng = document.getElementById("mensaje").value;
-//  console.log(strng);
   let offset1 = document.getElementById("offset").value;
-  //console.log(offset1)
-
-
-  main.innerHTML=`<p align='center'> Tu mensaje cifrado es: <br><br><br>${window.cipher.encode(strng,offset1)} <br><br><br><p>
-  <center>
-
-
-  <button id="buttonBack" onclick=location=URL> Volver al inicio </button>
-  <center>`;
-}
-
+  
+  document.getElementById("resul2").innerHTML=`<p align='center'> Tu mensaje descifrado es:<br><br><br>${window.cipher.encode(strng,offset1)}</p>`;
+  main.style.display = "none";
+  siguiente.style.display = "none";
+  resul1.style.display ="block";
+  botonregresa.style.display="block";
+})
 
 botonComenzar2.addEventListener("click",function(){
-
-  main.innerHTML=`<p align='center'>Ingresa tu mensaje que deseas descifrar<p>
-  <p align='center'> NOTA: No debes ingresar letras minuscula, ni caracteres, ni la letra ñ<p>
-  <p align='center'><textarea id="mensajedecodificado" rows="5" cols="70"></textarea><p>
-  <p align='center'> Ingrese el número de recorrido<p>
-  <p align='center'> NOTA: No debes ingresar número negativos<p>
-  <p align='center'><textarea id="offset1" rows="1" cols="3"></textarea><p>
+    siguientedecode.style.display = "block";
+    ocultmain.style.display="none";
+});
 
 
 
-  <center>
-  <button id="botonOk" onclick="next1()">Siguiente</button>
+//const resul=document.getElementById("resultado2");
+document.getElementById("botonOk1").addEventListener("click",function(){
 
-  <button id="buttonBack" onclick=location=URL> Volver al inicio </button>
-  <center>`;
+  let strng1 = document.getElementById("mensajedecodificado").value;
+  let offset1 = document.getElementById("offset1").value;
+  
 
+  document.getElementById("resultado3").innerHTML=`<p align='center'> Tu mensaje descifrado es:<br><br><br>${window.cipher.decode(strng1,offset1)}</p>`;
+  
+  main.style.display = "none";
+  siguientedecode.style.display = "none";
+  ocultmain.style.display="none";
+  botonregresa1.style.display = "block";
+});
 
+botonregresa.addEventListener("click",function(){
+
+  ocultmain.style.display="block";
+  resul1.style.display = "none"; 
+});
+
+document.getElementById("buttonBack").addEventListener("click",function(){
+
+  ocultmain.style.display="block";
+  siguiente.style.display = "none"; 
+});
+//boton volrver al inicio de la parte descifrar , despues que muestra el resultado final
+
+botonregresa1.addEventListener("click",function(){
+
+  main.style.display = "block";
+  x.style.display = "none";
+  
+  
 
 });
-// document.getElementById("idboton").addEventListener("evento", () => {})
-function next1(){
-  let strng1 = document.getElementById("mensajedecodificado").value;
-  //console.log(strng1);
-  let offset1 = document.getElementById("offset1").value;
-  //console.log(window.cipher.decode(strng1,offset1));
+//boton siguiente de descifrar
+document.getElementById("botonOk1").addEventListener("click",function(){
+main.style.display = "none";
+x.style.display = "block";
+});
+//boton volver al inicio de la parte descifrar
+document.getElementById("buttonBack1").addEventListener("click",function(){
+  main.style.display = "block";
+  siguientedecode.style.display ="none";
+});
 
-  main.innerHTML=`<p align='center'> Tu mensaje descifrado es:<br><br><br>${window.cipher.decode(strng1,offset1)}<p>
-
-  <center>
-  <button id="buttonBack" onclick=location=URL> Volver al inicio </button>
-  <center>`;
-
-}

@@ -25,6 +25,14 @@
     font-family: 'Shrikhand', cursive;
     font-size: 20pt;
     }
+    #buttonBack1 {
+      color: black;
+      border-radius: 10px;
+      background-color: #f8b500 ;
+      padding: 20px 40px;
+      font-family: 'Shrikhand', cursive;
+      font-size: 20pt;
+      }
     #botonOk {
       color: black;
       border-radius: 10px;
@@ -34,6 +42,15 @@
       font-size: 20pt;
       }
 
+      #botonOk1 {
+        color: black;
+        border-radius: 10px;
+        background-color: #f8b500 ;
+        padding: 20px 40px;
+        font-family: 'Shrikhand', cursive;
+        font-size: 20pt;
+        }
+  
 h1{
 
   ext-align: left;
@@ -57,3 +74,38 @@ body{
      border: 3px solid #888;
      border-color:black;
    }
+#oculto1{
+
+  display:none;
+
+}
+#oculto2{
+
+  display:none;
+
+
+}
+#resultado2{
+
+  display:none;
+
+}
+#buttoBack{
+  display:none;
+  color: black;
+      border-radius: 10px;
+      background-color: #f8b500 ;
+      padding: 20px 40px;
+      font-family: 'Shrikhand', cursive;
+      font-size: 20pt;
+
+}
+#buttoBack2{
+  display:none;
+  color: black;
+      border-radius: 10px;
+      background-color: #f8b500 ;
+      padding: 20px 40px;
+      font-family: 'Shrikhand', cursive;
+      font-size: 20pt;
+}

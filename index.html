@@ -14,26 +14,85 @@
     <header>
 
       <font face="courier">
-        <h1  align='center' id="titulo">  Cifrado Cesar <br> </h1>
+        <h1  align="center" id="titulo">  Cifrado Cesar <br> </h1>
+        </font>
       </header>
 
 
 
 
       <main id="main">
-        <p align='center'> El cifrado César es uno de los primeros métodos de cifrado mas conocidos.<br>El emperador romano Julio César lo usaba para enviar órdenes secretas a <br>sus generales en los campos de batalla.<br><br>
+        <p align="center"> El cifrado César es uno de los primeros métodos de cifrado mas conocidos.<br>El emperador romano Julio César lo usaba para enviar órdenes secretas a <br>sus generales en los campos de batalla.<br><br>
 
 En esta página te ayudaremos a cifrar y descifrar el mensaje de tu pareja.<br> Para comenzar ingresa la categoria que desea</p>
 
 
-        <div align='center'>
-          <button align='center' id="botonComenzar1" >Cifrar</button>
-          <button align='center' id="botonComenzar2" >Descifrar</button>
+        <div align="center">
+          <button align="center" id="botonComenzar1" >Cifrar</button>
+          <button align="center" id="botonComenzar2" >Descifrar</button>
               </div>
 
       </main>
+      <div id="oculto1">
+          <p align="center"> Ingresa tu mensaje que deseas cifrar</p>
+          <p align="center"> NOTA: No debes ingresar letras minuscula, ni caracteres, ni la letra ñ</p>
+          <p align="center"><textarea  id="mensaje" rows="5" cols="70"></textarea></p>
+          <p align="center"> Ingrese el número de recorrido</p>
+          <p align="center"> NOTA: No debes ingresar números negativos</p>
+          <p align="center"><textarea  id="offset" rows="1" cols="3"></textarea></p>
+        
+        
+          <center>
+          <button id="botonOk" >Siguiente</button>
+          <button id="buttonBack" > Volver al inicio </button>
+          </center>
+      </div>
+        
 
-     </div>
+      <div id="oculto2">
+        <p align="center">Ingresa tu mensaje que deseas descifrar</p>
+        <p align="center"> NOTA: No debes ingresar letras minuscula, ni caracteres, ni la letra ñ</p>
+        <p align="center"><textarea id="mensajedecodificado" rows="5" cols="70"></textarea></p>
+        <p align="center"> Ingrese el número de recorrido</p>
+        <p align="center"> NOTA: No debes ingresar número negativos</p>
+        <p align="center"><textarea id="offset1" rows="1" cols="3"></textarea></p>
+      
+      
+      
+        <center>
+        <button id="botonOk1" >Siguiente</button>
+      
+        <button id="buttonBack1"> Volver al inicio </button>
+        </center>
+      </div>
+
+      <div id="resul1">
+          <div id="resul2">
+        
+          </div>
+
+      <center>
+          <button id="buttoBack" > Volver al inicio </button>
+      </center>
+
+    </div>
+
+
+      <div id="resultado2">
+            <div id="resultado3">
+          
+            </div>
+
+        <center>
+            <button id="buttoBack2" > Volver al inicio </button>
+        </center>
+
+      </div>
+
+
+
+    </div>
+    
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
