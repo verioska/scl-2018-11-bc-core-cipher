@@ -61,7 +61,9 @@ h1{
   text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68; 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
 }
 body{
-    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/52/01/2257931d1f61b37.jpg") ;
+    background-image: url("https://cdn-pro.elsalvador.com/wp-content/uploads/2017/01/30194828/1475936307990-e1497299301133.jpg") ;
+    background-blend-mode:  screen;
+    background-color: rgb(240, 97, 53)
   }
 
   P {

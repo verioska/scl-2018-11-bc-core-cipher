@@ -2,18 +2,20 @@
 
 El cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
 
-![caeser-cipher]
+![caeser-cipher](https://seguridadeinformaticaweb.files.wordpress.com/2017/02/cifradocesar.jpg?w=1400).
 
-(https://seguridadeinformaticaweb.files.wordpress.com/2017/02/cifradocesar.jpg?w=1400)
 
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+El cifrado césar es una de las técnicas más faciles para cifrar un mensaje. Solo debes ingresar un deszplazamiento , para saber cuantas posiciones a la derecha va correr.Para decodificar el mensaje el dezplazamiento va para la izquierda.
 
 Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
 - La letra A se cifra como D.
-- La palabra CASA se cifra como FDVD.
-- Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-- Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+
+En el siguiente ejemplo vamos a cifrar la palabra CASA con un desplazamiento de 2 posiciones
+
+![ejemplo](https://justcodeit.io/wp-content/uploads/2018/08/Cifrado_Cesar_Python.png)
+
+
 
 En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
 
