@@ -66,3 +66,6 @@ En la ultima pantalla ya le mostramos al usuario el resultado de su mensaje codi
 
 Nos enfocamos de que nuestra pagina fuera breve y precisa, para que el usuario no tuviera problemas en entender. Dejamos las reglas claras, si el las rompe le saldrá un mensaje de que algo esta haciendo mal.
 
+# Planificación 
+
+https://trello.com/b/Y6cD7gvB/proyecto-de-cifrado
