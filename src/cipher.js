@@ -3,37 +3,36 @@ window.cipher = {
     offset1 = parseInt(offset1)
     let total=[];    //Vvariable local
 
-
-
    if(offset1>=0 && typeof offset1==="number" ){
-
          for(let i=0; i< strng.length;i++) {
-
             let ascii= strng.charCodeAt(i);
-
             if (ascii===32){
                 total.push(String.fromCharCode(ascii))
-          }
-          else if (ascii>=65 && ascii<=90 ){
-
-                let resultado=(ascii-65+offset1) %26+65;
+            }
+              else if (ascii>=65 && ascii<=90 ){
+                  let resultado=(ascii-65+offset1) %26+65;
+                  let resultadofinal=String.fromCharCode(resultado);
+                  total.push(resultadofinal);
+               //let totalJoined=total.join("");
+              } 
+              else if (ascii>=97 && ascii<=122 ){
+                let resultado=(ascii-97+offset1) %26+97;
                 let resultadofinal=String.fromCharCode(resultado);
                 total.push(resultadofinal);
-               //let totalJoined=total.join("");
-
-          } else {
-                alert("caracter no valido")
-                return "ESO NO SE HACE";
-         }
-
-                                   } //llave for
-        let totalJoined=total.join("");
-       return totalJoined;
-     }//lave if mayor
-   else {
-     alert("EL NUMERO ES NEGATIVO ")
-     return "ESO NO SE HACE";
-       }
+             //let totalJoined=total.join("");
+            }
+    else {
+         alert("caracter no valido")
+         return "ESO NO SE HACE";
+    }
+         } //llave for
+    let totalJoined=total.join("");
+    return totalJoined;
+   }//lave if mayor
+    else {
+          alert("EL NUMERO ES NEGATIVO ")
+          return "ESO NO SE HACE";
+    }
 }, //LLAVE DE ENCODE
 
 
